@@ -1,7 +1,7 @@
 <?php 
+session_start();
 require_once'../model/Usermodel.php';
 require_once'../bdd/Database.php';
-session_start();
 $database = new Database();
 $pdo = $database->pdo;
 

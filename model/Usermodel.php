@@ -67,6 +67,25 @@ class UserModel {
             return "Identifiants incorrects.";
         }
     }
+
+    /*public function NewPassword($password, $newpassword){
+        $oldpassword = trim(htmlspecialchars($_POST['oldpassword']));
+        $newpassword = trim(htmlspecialchars($_POST['newpassword']));
+        $confirmationPassword = trim(htmlspecialchars($_POST['confirmationpassword']));
+
+        if(empty($oldpassword) || empty($newpassword) || empty($confirmationPassword)){
+            return "Veuillez remplir tous les champs.";
+        }
+
+        // Préparer la requête pour récupérer l'utilisateur
+        $stmt = $this->pdo->prepare("SELECT * FROM users WHERE username = :username");
+        $stmt->execute(['username' => $username]);
+        $user = $stmt->fetch();
+
+        if ($user && password_verify($password, $user['password'])){
+
+        }
+    }*/
 }
 ?>
 
